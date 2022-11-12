@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+</header>
+<main>
+    <section class="hero">
+        <h1 class="hero__app-name">todos</h1>
+    </section>
+    <section class="todos">
+        <div class="container">
+            <div class="todos__search-wrapper">
+                <button class="todos__search-button">
+                    <img src="images/arrow-down.png">
+                </button>
+                <input type="text" placeholder="What needs to be done?" class="todos__search-input"/>
+            </div>
+            <ul class="todos__list">
+                <li class="todos__item">
+                    <button class="todos__change-status-button">
+                        <img src="images/Vector_0.png" alt="circle">
+                    </button>
+                    <p class="todos__text">
+                        todo 1
+                    </p>
+                    <button class="todos__delete">
+                        <img src="images/close.png" alt="close">
+                    </button>
+                </li>
+                <li class="todos__item">
+                    <button class="todos__change-status-button">
+                        <img src="images/success.png" alt="circle">
+                    </button>
+                    <p class="todos__text-done">
+                        todo 1
+                    </p>
+                </li>
+                <li class="todos__item">
+                    <button class="todos__change-status-button">
+                        <img src="images/green-circle.png" alt="circle">
+                        <img class="todos__item-success-icon" src="images/success.png" alt="circle">
+                    </button>
+                    <p class="todos__text-done">
+                        todo 1
+                    </p>
+                </li>
+            </ul>
+            <input class="todos__create-input" placeholder="new todo">
+            <div class="todo__bottom-info">
+                <p class="todo__bottom-info-count">
+                    1 item left
+                </p>
+                <ul class="todo__bottom-info-filter">
+                    <li class="todo__bottom-info-filter-item">
+                        <button class="todo__bottom-info-filter-button active">
+                            All
+                        </button>
+                    </li>
+                    <li class="todo__bottom-info-filter-item">
+                        <button class="todo__bottom-info-filter-button">
+                            Active
+                        </button>
+                    </li>
+                    <li class="todo__bottom-info-filter-item">
+                        <button class="todo__bottom-info-filter-button">
+                            Completed
+                        </button>
+                    </li>
+                </ul>
+                <p>
+                    Clear completed
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
